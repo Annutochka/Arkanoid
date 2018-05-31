@@ -1,4 +1,4 @@
-default: bin/arkanoid
+default: bin/arkanoid //
 
 test: bin/arkanoid_test
 	bin/arkanoid_test
