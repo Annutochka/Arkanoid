@@ -21,7 +21,7 @@ Sprite win_sprite;
 Font font;
 Text text("", font, 20);
 
-bool collapse(block bl) // проверка на столкновение шарика с блоком
+bool collapse(block bl) // проверка на столкновение шара с блоком
 {
 	if ((ball_x > bl.cx1 && ball_x < bl.cx2) && (ball_y > bl.cy1 && ball_y < bl.cy2))
 		return true;
