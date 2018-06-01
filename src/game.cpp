@@ -42,6 +42,12 @@ bool collapse(block bl) // проверка на столкновение шар
 	else return false;
 }
 
+bool isGame(int game_end)
+{
+	if(game_end != 0) return false;
+	else return true;
+}
+
 void blocksInit(block game[5][12]) // Заполняет блоками игровую область 
 {
 	for (int i = 0; i < 5; i++)
