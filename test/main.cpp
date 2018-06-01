@@ -1,4 +1,4 @@
-#include "arkanoid.h"
+#include "../include/arkanoid.h"
 
 using namespace sf;
 
