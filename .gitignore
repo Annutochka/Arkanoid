@@ -1,0 +1,4 @@
+*.o
+arkanoid
+arkanoid-test
+.travis.yml~
