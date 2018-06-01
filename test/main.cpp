@@ -54,3 +54,41 @@ int rightBorderIncorrectTest(double platform_position)
     return 1;
 }
 
+int ballCollapsingCorrectTest(block b)
+{
+    tests++;
+    b.setPos(330, 420);
+    
+    if(collapse(b))
+    {
+        passed++;
+        return 0;
+    }
+    printf("Ball collapsing test doesn't pass!\n");
+    return 1;
+}
+
+int ballCollapsingIncorrectTest(block b)
+{
+    tests++;
+    b.setPos(300, 300);
+    if(!collapse(b))
+    {
+        passed++;
+        return 0;
+    }
+    printf("Ball collapsing test doesn't pass!\n");
+    return 1;
+}
+
+int main()
+{
+    leftBorderCorrectTest(-5);
+    leftBorderIncorrectTest(100);
+    rightBorderCorrectTest(600);
+    rightBorderIncorrectTest(300);
+    ballCollapsingCorrectTest(b);
+    ballCollapsingIncorrectTest(b);
+    printf("\n%d tests passed out of %d\n", passed, tests);
+    return 0;
+}
