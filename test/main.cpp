@@ -42,3 +42,15 @@ int rightBorderCorrectTest(double platform_position)
     return 1;
 }
 
+int rightBorderIncorrectTest(double platform_position)
+{
+    tests++;
+    if(!isRightBorder(platform_position))
+    {
+        passed++;
+        return 0;
+    }
+    printf("Right border test doesn't pass!\n");
+    return 1;
+}
+
