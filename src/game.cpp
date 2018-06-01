@@ -28,6 +28,13 @@ bool isLeftBorder(double platform_position)
 	return false;
 }
 
+bool isRightBorder(double platform_position)
+{
+	if(platform_position + 100 > 640)
+		return true;
+	return false;
+}
+
 bool collapse(block bl) // проверка на столкновение шара с блоком
 {
 	if ((ball_x > bl.cx1 && ball_x < bl.cx2) && (ball_y > bl.cy1 && ball_y < bl.cy2))
