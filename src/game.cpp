@@ -28,3 +28,20 @@ bool collapse(block bl) // проверка на столкновение шар
 	else return false;
 }
 
+void blocksInit(block game[5][12]) // Заполняет блоками игровую область 
+{
+	for (int i = 0; i < 5; i++)
+		{
+			x = 20;
+			for (int j = 0; j < 12; j++)
+			{
+				game[i][j] = block();
+				game[i][j].setTexture();
+				game[i][j].setSprite();
+				game[i][j].setPos(x, y);
+				x += 50;
+			}
+			y += 30;
+		}
+	y = 20;
+} 
